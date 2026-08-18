@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@opencode-ai/nephesh-dream",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsgo --noEmit",
+    "start": "bun src/cli.ts"
+  },
+  "bin": {
+    "nephesh-dream": "./src/cli.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "@opencode-ai/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "catalog:",
+    "@tsconfig/node22": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "@typescript/native-preview": "catalog:"
+  }
+}
